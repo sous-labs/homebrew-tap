@@ -1,0 +1,45 @@
+# Copy to sous-labs/homebrew-tap:.github/workflows/bump-formula.yml.
+name: Bump Songe formula
+
+on:
+  repository_dispatch:
+    types: [songe-release]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Stable or preview PyPI version without the v prefix
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: songe-formula
+  cancel-in-progress: false
+
+jobs:
+  bump:
+    if: github.repository == 'sous-labs/homebrew-tap'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: astral-sh/setup-uv@v7
+        with:
+          version: "0.13.7"
+      - name: Pin verified PyPI wheel and offline dependencies
+        env:
+          RELEASE_VERSION: ${{ inputs.version || github.event.client_payload.version }}
+        run: uv run --script scripts/update_formula.py "$RELEASE_VERSION" --formula Formula/songe.rb
+      - name: Commit formula update
+        run: |
+          if ! git diff --quiet -- Formula/songe.rb; then
+            git add Formula/songe.rb
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Bump Songe to the published PyPI release'
+            git push origin HEAD:main
+          fi
