@@ -11,25 +11,23 @@ class Songe < Formula
 
 
   depends_on "python@3.12"
+  depends_on "uv" => :build
 
   def install
     python = Formula["python@3.12"].opt_bin/"python3.12"
     virtualenv_create(libexec, python, system_site_packages: false)
-    # This third-party tap permits PyPI dependency wheels. Homebrew's helper
-    # disables dependency resolution, so invoke pip explicitly in our virtualenv.
-    system python, "-m", "pip", "--python=#{libexec}/bin/python", "install",
-           "--isolated", "--disable-pip-version-check", "--no-cache-dir",
-           # Homebrew's build sandbox hides the macOS version from pip's
-           # truststore; use the bundled certificates instead.
-           "--use-deprecated=legacy-certs",
-           "--index-url=https://pypi.org/simple", "--only-binary=:all:",
+    # Homebrew's build sandbox hides the macOS version, which pip's
+    # truststore needs at import; uv installs the wheels without it.
+    system Formula["uv"].opt_bin/"uv", "pip", "install",
+           "--python", libexec/"bin/python", "--no-cache",
+           "--index-url", "https://pypi.org/simple", "--only-binary", ":all:",
            buildpath/"songe-#{version}-py3-none-any.whl"
     bin.install_symlink libexec/"bin/songe"
   end
 
   def caveats
     <<~EOS
-      Run songe init to measure your machine and configure Songe.
+      Run songe init.
     EOS
   end
 
