@@ -5,11 +5,10 @@ class Songe < Formula
   homepage "https://github.com/sous-labs/songe"
   # Pinned reservation artifact. The release updater replaces these three fields
   # from PyPI and removes the disable line after verifying the real CLI wheel.
-  url "https://files.pythonhosted.org/packages/19/3b/ac8533e3dd3fe71e501aba46c742a25209b9cde57f2296e4e7a628abac54/songe-0.0.0.dev0-py3-none-any.whl", using: :nounzip
-  version "0.0.0.dev0"
-  sha256 "2ed2600c906bb188de35b5df2f9f448c915bde562680743668eba48474b60ed7"
+  url "https://files.pythonhosted.org/packages/1d/6e/1043d8af11f8a9b8fb5b75d7afbca1f315a6943888a273619f1972b4e2b2/songe-0.1.0a2-py3-none-any.whl", using: :nounzip
+  version "0.1.0a2"
+  sha256 "7c58e53dbca47b27ec010bf955f122f968a4a15051c8f5e50c679a481044166e"
 
-  disable! date: "2026-11-10", because: "only the PyPI name reservation exists"
 
   depends_on "python@3.12"
 
