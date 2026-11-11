@@ -19,6 +19,9 @@ class Songe < Formula
     # disables dependency resolution, so invoke pip explicitly in our virtualenv.
     system python, "-m", "pip", "--python=#{libexec}/bin/python", "install",
            "--isolated", "--disable-pip-version-check", "--no-cache-dir",
+           # Homebrew's build sandbox hides the macOS version from pip's
+           # truststore; use the bundled certificates instead.
+           "--use-deprecated=legacy-certs",
            "--index-url=https://pypi.org/simple", "--only-binary=:all:",
            buildpath/"songe-#{version}-py3-none-any.whl"
     bin.install_symlink libexec/"bin/songe"
