@@ -4,9 +4,9 @@ class Songe < Formula
   desc "Local hindsight distillation for a model that sleeps"
   homepage "https://github.com/sous-labs/songe"
   # The release updater verifies the CLI wheel and pins all dependency wheels.
-  url "https://files.pythonhosted.org/packages/1d/6e/1043d8af11f8a9b8fb5b75d7afbca1f315a6943888a273619f1972b4e2b2/songe-0.1.0a2-py3-none-any.whl", using: :nounzip
-  version "0.1.0a2"
-  sha256 "7c58e53dbca47b27ec010bf955f122f968a4a15051c8f5e50c679a481044166e"
+  url "https://files.pythonhosted.org/packages/5a/c0/9ffbfc699ec97155502bdf3eaf675659067ffc24e7bf63b7d32e0d869c5b/songe-0.1.0a4-py3-none-any.whl", using: :nounzip
+  version "0.1.0a4"
+  sha256 "708bf2e0899af43387fa859a89026b4960848547d33a5a3b58b74b4a48b559a7"
 
   depends_on "python@3.12"
   depends_on macos: :sonoma
@@ -20,6 +20,11 @@ class Songe < Formula
   resource "attrs" do
     url "https://files.pythonhosted.org/packages/64/b4/17d4b0b2a2dc85a6df63d1157e028ed19f90d4cd97c36717afef2bc2f395/attrs-26.1.0-py3-none-any.whl", using: :nounzip
     sha256 "c647aa4a12dfbad9333ca4e71fe62ddc36f4e63b2d260a37a8b83d2f043ac309"
+  end
+
+  resource "bashlex" do
+    url "https://files.pythonhosted.org/packages/f4/be/6985abb1011fda8a523cfe21ed9629e397d6e06fb5bae99750402b25c95b/bashlex-0.18-py2.py3-none-any.whl", using: :nounzip
+    sha256 "91d73a23a3e51711919c1c899083890cdecffc91d8c088942725ac13e9dcfffa"
   end
 
   resource "certifi" do
@@ -100,6 +105,11 @@ class Songe < Formula
   resource "mdurl" do
     url "https://files.pythonhosted.org/packages/b3/38/89ba8ad64ae25be8de66a6d463314cf1eb366222074cfda9ee839c56a4b4/mdurl-0.1.2-py3-none-any.whl", using: :nounzip
     sha256 "84008a41e51615a49fc9966191ff91509e3c40b939176e643fd50a5c2196b8f8"
+  end
+
+  resource "packaging" do
+    url "https://files.pythonhosted.org/packages/63/34/ba1c580383c9eada3711951fef0795c80b829a078d72188184bcab9dd527/packaging-26.3-py3-none-any.whl", using: :nounzip
+    sha256 "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c"
   end
 
   resource "platformdirs" do
@@ -244,11 +254,6 @@ class Songe < Formula
         sha256 "9cb18a327b49c5c337f972b03682f6a49855525faaf3c0d3e9c96cd0fd8880a8"
       end
 
-      resource "packaging" do
-        url "https://files.pythonhosted.org/packages/63/34/ba1c580383c9eada3711951fef0795c80b829a078d72188184bcab9dd527/packaging-26.3-py3-none-any.whl", using: :nounzip
-        sha256 "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c"
-      end
-
       resource "protobuf" do
         url "https://files.pythonhosted.org/packages/32/72/98342feb672507c8f3a69e34b4fa8961f608edba5c1a48a6f47156d92cb5/protobuf-7.36.2-cp310-abi3-macosx_10_9_universal2.whl", using: :nounzip
         sha256 "cbc70b17ee27e28894c7fee8bb04be1abead49e936bc70eb60052531eee2079e"
@@ -315,8 +320,8 @@ class Songe < Formula
       end
 
       resource "typer" do
-        url "https://files.pythonhosted.org/packages/c1/3d/cc08d3cb257764101c71c47f18e2f547782d013928edc877f155cb99229d/typer-0.29.0-py3-none-any.whl", using: :nounzip
-        sha256 "b3c3de6e06a848274dc7bd56a433499e9cf25fa1d40aa3ba4eccfec4e1624c7b"
+        url "https://files.pythonhosted.org/packages/05/ff/51969745f31cea6bcd12151e668febcf979656316e67a7755942267c1273/typer-0.29.1-py3-none-any.whl", using: :nounzip
+        sha256 "00dbc549c13428bec1be55fe1f4d0fb8c6637a310e4f178ef14abe9534ee7b58"
       end
 
       resource "typing-inspection" do
