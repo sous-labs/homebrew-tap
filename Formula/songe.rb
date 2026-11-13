@@ -4,9 +4,9 @@ class Songe < Formula
   desc "Local hindsight distillation for a model that sleeps"
   homepage "https://github.com/sous-labs/songe"
   # The release updater verifies the CLI wheel and pins all dependency wheels.
-  url "https://files.pythonhosted.org/packages/c3/d7/aa623149b04d02f796c1643cf5b1719c78cdfe22e4d796af90f9471995d2/songe-0.1.0a6-py3-none-any.whl", using: :nounzip
-  version "0.1.0a6"
-  sha256 "ae3fce0ee6a00230666f7c94ee33dd5f4e0c3429bb54728f79f1a5f7d8cecbbd"
+  url "https://files.pythonhosted.org/packages/25/e0/ae20a242c6c7e67b8efda508459b23afa5a323233032067c370109d32ccf/songe-0.1.0a9-py3-none-any.whl", using: :nounzip
+  version "0.1.0a9"
+  sha256 "712f2eec22aaa760d2032be76bce330d0e796a1b2eeb3c8a505d82475015a2f1"
 
   depends_on "python@3.12"
   depends_on macos: :sonoma
