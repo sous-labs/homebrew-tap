@@ -4,9 +4,9 @@ class Songe < Formula
   desc "Local hindsight distillation for a model that sleeps"
   homepage "https://github.com/sous-labs/songe"
   # The release updater verifies the CLI wheel and pins all dependency wheels.
-  url "https://files.pythonhosted.org/packages/25/e0/ae20a242c6c7e67b8efda508459b23afa5a323233032067c370109d32ccf/songe-0.1.0a9-py3-none-any.whl", using: :nounzip
-  version "0.1.0a9"
-  sha256 "712f2eec22aaa760d2032be76bce330d0e796a1b2eeb3c8a505d82475015a2f1"
+  url "https://files.pythonhosted.org/packages/8a/f3/e73c955a980e1c666a9248b9a4906e459429af0692d4fd00f90a70de4f80/songe-0.1.0a11-py3-none-any.whl", using: :nounzip
+  version "0.1.0a11"
+  sha256 "3ccdcccc67cd2d7cd9b254da6b207aeeedb885f1b817385875f708ab942e3059"
 
   depends_on "python@3.12"
   depends_on macos: :sonoma
@@ -20,11 +20,6 @@ class Songe < Formula
   resource "attrs" do
     url "https://files.pythonhosted.org/packages/64/b4/17d4b0b2a2dc85a6df63d1157e028ed19f90d4cd97c36717afef2bc2f395/attrs-26.1.0-py3-none-any.whl", using: :nounzip
     sha256 "c647aa4a12dfbad9333ca4e71fe62ddc36f4e63b2d260a37a8b83d2f043ac309"
-  end
-
-  resource "bashlex" do
-    url "https://files.pythonhosted.org/packages/f4/be/6985abb1011fda8a523cfe21ed9629e397d6e06fb5bae99750402b25c95b/bashlex-0.18-py2.py3-none-any.whl", using: :nounzip
-    sha256 "91d73a23a3e51711919c1c899083890cdecffc91d8c088942725ac13e9dcfffa"
   end
 
   resource "certifi" do
