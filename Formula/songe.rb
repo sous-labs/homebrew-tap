@@ -4,9 +4,9 @@ class Songe < Formula
   desc "Local hindsight distillation for a model that sleeps"
   homepage "https://github.com/sous-labs/songe"
   # The release updater verifies the CLI wheel and pins all dependency wheels.
-  url "https://files.pythonhosted.org/packages/30/64/710902dc7a96ad1857a8256cdc48e2edfaaee2f1a7763f9ec20b2d2b7195/songe-0.1.0a12-py3-none-any.whl", using: :nounzip
-  version "0.1.0a12"
-  sha256 "642b5a807fd9a1dbdcd5e4807da3147e27727b5b80268d6cd20c089c76b63c93"
+  url "https://files.pythonhosted.org/packages/12/6a/b87702d8c977b7890afeb04e26c0fa9693eecf15201078291def5a3d37cd/songe-0.1.0a13-py3-none-any.whl", using: :nounzip
+  version "0.1.0a13"
+  sha256 "4383761198319984b6fbfdecefaabd24de3297cee9cc2f2a4003de446818d759"
 
   depends_on "python@3.12"
   depends_on macos: :sonoma
@@ -53,8 +53,8 @@ class Songe < Formula
   end
 
   resource "httpx-ws" do
-    url "https://files.pythonhosted.org/packages/98/f8/a6bc80313a9e93c888fa10534dfce2ad76ff86911b6f485777ce6de6a073/httpx_ws-0.9.0-py3-none-any.whl", using: :nounzip
-    sha256 "71640d2fb1bf9a225775015b33cd755cfd4c5f7e21c885192fe3adc4c387b248"
+    url "https://files.pythonhosted.org/packages/a6/3e/ae8e8c55d0fa4429c198e91aa82622f065332ddacfe6c5e9740a7ddec15f/httpx_ws-0.10.0-py3-none-any.whl", using: :nounzip
+    sha256 "62ed6eb42acbfdad4b10cb0856f60d8bec0096b2c7c22c10b7814cb79d056d8c"
   end
 
   resource "idna" do
@@ -108,8 +108,8 @@ class Songe < Formula
   end
 
   resource "platformdirs" do
-    url "https://files.pythonhosted.org/packages/7c/ae/ecbbbfd0e4343a6a521d49b3c8656fb4643dee2a4f6eaf941cf3280391a8/platformdirs-4.14.5-py3-none-any.whl", using: :nounzip
-    sha256 "8e778c6fa421516f4d3369449f8df3b0e1b72c0e0005fe88e3ec772d0a14e750"
+    url "https://files.pythonhosted.org/packages/5b/be/373cc7341f53bfd3acba3e5db62433fd960a45fcf73ad64a5f4d27e74910/platformdirs-4.14.8-py3-none-any.whl", using: :nounzip
+    sha256 "1e34af590de4d978631b751eb2202f2fee4497537a17c1720b12fcf57b331392"
   end
 
   resource "pygments" do
@@ -170,8 +170,8 @@ class Songe < Formula
   on_macos do
     on_arm do
       resource "annotated-doc" do
-        url "https://files.pythonhosted.org/packages/cd/f5/3dd85d583e55be76cd02b1fc9bbec771b12d63124b01661d9535ccf8721f/annotated_doc-0.0.6-py3-none-any.whl", using: :nounzip
-        sha256 "361ca0950cc7082f53fa69e9328409f40a62c61e57e0a47e1825a08078a58a53"
+        url "https://files.pythonhosted.org/packages/5e/b1/9530d6bee606979d54501adcc767d958a38929827f11a524b0d93429d2ad/annotated_doc-0.0.7-py3-none-any.whl", using: :nounzip
+        sha256 "6bc31bbbec6dfaaedc1676dbc11dbda96fe22a2b5c400e9ebad113fec44a9dc6"
       end
 
       resource "annotated-types" do
@@ -185,8 +185,8 @@ class Songe < Formula
       end
 
       resource "filelock" do
-        url "https://files.pythonhosted.org/packages/ef/90/5d0096a325aa0f83ba7a3968bfb485b67e32c947bdf9cd0fcb4b485be718/filelock-4.2.10-py3-none-any.whl", using: :nounzip
-        sha256 "9479aaeb4db20b5a53e3da28493edd24720b66b8a0b84030aa56ccdf243d6857"
+        url "https://files.pythonhosted.org/packages/8a/c9/eb6b6528c7edb958d4c24ac47a8b94113d9de36e4cfc6eecd599b1a4f349/filelock-4.2.12-py3-none-any.whl", using: :nounzip
+        sha256 "21decfec02f116ed4c954433cdb31f28c3b346b784543177b6d7059da2702ee9"
       end
 
       resource "fsspec" do
@@ -200,13 +200,13 @@ class Songe < Formula
       end
 
       resource "httpcore2" do
-        url "https://files.pythonhosted.org/packages/af/c2/ce417c397afa5181f0e3c6ff01a4d01639414e1adef08730d97571297151/httpcore2-2.16.0-py3-none-any.whl", using: :nounzip
-        sha256 "5c4358319f2602d984ad93182c9fee5160f22e9da7babdda870a5e7c4e2dc34f"
+        url "https://files.pythonhosted.org/packages/2a/e8/009c347feac27f8960605aa98d55ed263b5870dd4fd80b82fd1d00d5716c/httpcore2-2.16.2-py3-none-any.whl", using: :nounzip
+        sha256 "16051ae2a42f776007543f32de9349a317b23d2cbb4e1456b4bac0e88b87419a"
       end
 
       resource "httpx2" do
-        url "https://files.pythonhosted.org/packages/7b/3d/2e4bc4fd1ef9770871669adb348d612a6e4786b303a23f9935b81c48dd60/httpx2-2.16.0-py3-none-any.whl", using: :nounzip
-        sha256 "fd2c5d7909e8d86fe92d53020c310ca0e4e431b838c207c5754b9bbf0308d49a"
+        url "https://files.pythonhosted.org/packages/77/de/8c4306a3d6aa2495111986addf33a9e561eff4c47552e4c4b9251160d0ad/httpx2-2.16.2-py3-none-any.whl", using: :nounzip
+        sha256 "f05c13aade4c45dbf1c9060647a1058f0acad62398fad96e741269edb33d46f5"
       end
 
       resource "huggingface-hub" do
@@ -245,8 +245,8 @@ class Songe < Formula
       end
 
       resource "numpy" do
-        url "https://files.pythonhosted.org/packages/31/2f/5ea3570fcb8ccd0882bea99436a513b2c85dad8f774a2057849130a8fb99/numpy-2.5.4-cp312-cp312-macosx_14_0_arm64.whl", using: :nounzip
-        sha256 "9cb18a327b49c5c337f972b03682f6a49855525faaf3c0d3e9c96cd0fd8880a8"
+        url "https://files.pythonhosted.org/packages/8a/92/6de34324a266b73c04ba977db5864b9016500076b26f09078a565f527d34/numpy-2.5.5-cp312-cp312-macosx_14_0_arm64.whl", using: :nounzip
+        sha256 "a3856a97e48ed8371c680fb04120b99fbcc29f2076ebe6dc3deb34f77947c5ca"
       end
 
       resource "protobuf" do
@@ -260,13 +260,13 @@ class Songe < Formula
       end
 
       resource "pydantic" do
-        url "https://files.pythonhosted.org/packages/72/b8/b864503789ef5c58597d2a7b4adbee62c26440ab1e682581fc6838df8947/pydantic-2.14.3-py3-none-any.whl", using: :nounzip
-        sha256 "3f7b347782ab7e4cf4c798496ae3a82787d9f21ec12676a9c564355eeef8daa8"
+        url "https://files.pythonhosted.org/packages/8a/8c/824a686c4ba815ddb0722f9e66272088bccd4e1ae1d2f7015375e4a4fc7f/pydantic-2.14.4-py3-none-any.whl", using: :nounzip
+        sha256 "653a2ad9f6d8858529c77c72717d0ea991d6c6837fe683246b2f4b2bbfc3fadc"
       end
 
       resource "pydantic-core" do
-        url "https://files.pythonhosted.org/packages/c1/39/6618e541658d5a687a8d4962fc304350073a8f322bc4c62e8ed4c2d514d6/pydantic_core-2.50.4-cp312-cp312-macosx_11_0_arm64.whl", using: :nounzip
-        sha256 "1e20cbde2b6deb33a51d08cd168454dd9044ec7d4474056f4d98d63f51578783"
+        url "https://files.pythonhosted.org/packages/9f/6f/4e172894c2a4ca3bacd6c5f823ea5576df25eafe7593ffeb3576895b92aa/pydantic_core-2.50.5-cp312-cp312-macosx_11_0_arm64.whl", using: :nounzip
+        sha256 "a9bcf23628860d5a90cacdc188ee3b7d0547a38eb985214f03e7002a6ca0e558"
       end
 
       resource "pyyaml" do
@@ -275,8 +275,8 @@ class Songe < Formula
       end
 
       resource "regex" do
-        url "https://files.pythonhosted.org/packages/13/c6/32671781f2e61f40c76cf81df160ef5471264ba8a5f28cbd342cd4887a8c/regex-2026.11.9-cp312-cp312-macosx_11_0_arm64.whl", using: :nounzip
-        sha256 "2255e173ffb8da59f26ec3529bf7e8531320e71575b27c3fb062747eb3a12e1f"
+        url "https://files.pythonhosted.org/packages/51/d2/45aedbbf94e0cee3d64ff2a170dc89cfe52edaecab4f88645c996bfff589/regex-2026.11.19-cp312-cp312-macosx_11_0_arm64.whl", using: :nounzip
+        sha256 "7ecca76778a2889d59a978ddb78864ea55b70238ed60245bccada4f01578cbbd"
       end
 
       resource "rpds-py" do
@@ -305,8 +305,8 @@ class Songe < Formula
       end
 
       resource "transformers" do
-        url "https://files.pythonhosted.org/packages/ff/bb/cc0b27a3000ddcf4903d3a26983c8b4c9a36050bbaf05675f353e8bcb08c/transformers-5.22.2-py3-none-any.whl", using: :nounzip
-        sha256 "829c2820aff91730b8ec45a4b8ff4be07f586a140b68a9073998b36fa35297dc"
+        url "https://files.pythonhosted.org/packages/bf/62/8c06b0b932cc9a5dac7ce48bf23737107143e75f9b20fd99e97dde1463c3/transformers-5.23.0-py3-none-any.whl", using: :nounzip
+        sha256 "018e82fd07490ad5bb58414f65e31576033dc7f36bed10c574843f69b90991bf"
       end
 
       resource "truststore" do
@@ -315,8 +315,8 @@ class Songe < Formula
       end
 
       resource "typer" do
-        url "https://files.pythonhosted.org/packages/05/ff/51969745f31cea6bcd12151e668febcf979656316e67a7755942267c1273/typer-0.29.1-py3-none-any.whl", using: :nounzip
-        sha256 "00dbc549c13428bec1be55fe1f4d0fb8c6637a310e4f178ef14abe9534ee7b58"
+        url "https://files.pythonhosted.org/packages/62/f3/864dcb0e165b52e9f75aa3c7e0aeeb9876f139c66eb14d87856bb173b0fa/typer-0.29.2-py3-none-any.whl", using: :nounzip
+        sha256 "f30731f8ca758368b836b3714872e58e395cef8fcaff918c853b1969ed5274e7"
       end
 
       resource "typing-inspection" do
@@ -336,8 +336,8 @@ class Songe < Formula
       end
 
       resource "numpy" do
-        url "https://files.pythonhosted.org/packages/34/f2/b4fc1bafca03868220b5eaf729d2f21ebd7d7b151c0f9e144fe212bbca35/numpy-2.5.4-cp312-cp312-macosx_14_0_x86_64.whl", using: :nounzip
-        sha256 "aec3fc4b32ff82421274f5d205c559c51c840c8df66a78efd7f3612dd005a26a"
+        url "https://files.pythonhosted.org/packages/1e/a1/6563b74cd67e3873f9897afebb3244529b1494d4c0df30f3201329a7e316/numpy-2.5.5-cp312-cp312-macosx_14_0_x86_64.whl", using: :nounzip
+        sha256 "f5e8603f0892d1b848e12124863b5b29af72383ee9b25ddc6fe4967d4c1ee6ef"
       end
 
       resource "psutil" do
@@ -370,8 +370,8 @@ class Songe < Formula
       end
 
       resource "numpy" do
-        url "https://files.pythonhosted.org/packages/dc/96/8319e2457ae4333c62c815c7006b869a4f60985c1e01024c2f8c6c040fe5/numpy-2.5.4-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl", using: :nounzip
-        sha256 "fe4d21ab149f15e4e6043dfb0de87e6e5f34ac176cde83060e9802981fca2ac2"
+        url "https://files.pythonhosted.org/packages/c2/22/82184e9a5b50a4a298e9f8fe0bd8cfc483672dbfea8a3b57c78e2376b139/numpy-2.5.5-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl", using: :nounzip
+        sha256 "a0750f2156d53446caca85663d0b65d67214e1664b9050454a731ea1418d176a"
       end
 
       resource "psutil" do
@@ -401,8 +401,8 @@ class Songe < Formula
       end
 
       resource "numpy" do
-        url "https://files.pythonhosted.org/packages/43/a3/c799c62e19c337e6d3770b08e475887fb30ce8477d3c09efca6b2f0228a6/numpy-2.5.4-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", using: :nounzip
-        sha256 "fbde6962867ee75b48b0ee29b2b9372ec5d617799dbaf38e82dc0596f2f7738a"
+        url "https://files.pythonhosted.org/packages/99/61/522b973ba38987b22a4a71beaed2ea6ac9fd4f687baaa2bc9a45100625e0/numpy-2.5.5-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", using: :nounzip
+        sha256 "704d819265e5d1064d932968e9ee85fff2103ccc78c05b878c06943ba27b8507"
       end
 
       resource "psutil" do
