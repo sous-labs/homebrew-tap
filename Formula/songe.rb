@@ -4,9 +4,9 @@ class Songe < Formula
   desc "Local hindsight distillation for a model that sleeps"
   homepage "https://github.com/sous-labs/songe"
   # The release updater verifies the CLI wheel and pins all dependency wheels.
-  url "https://files.pythonhosted.org/packages/12/6a/b87702d8c977b7890afeb04e26c0fa9693eecf15201078291def5a3d37cd/songe-0.1.0a13-py3-none-any.whl", using: :nounzip
-  version "0.1.0a13"
-  sha256 "4383761198319984b6fbfdecefaabd24de3297cee9cc2f2a4003de446818d759"
+  url "https://files.pythonhosted.org/packages/6a/0e/a14e88df336dcd0328dd76936f3ef05e995b63a6da1dfc95d201a8a96206/songe-0.1.0a14-py3-none-any.whl", using: :nounzip
+  version "0.1.0a14"
+  sha256 "35632eb2dc54acf1b472634c1cb1ad419515b6832c577db3726f7b5d70484c95"
 
   depends_on "python@3.12"
   depends_on macos: :sonoma
@@ -23,8 +23,8 @@ class Songe < Formula
   end
 
   resource "certifi" do
-    url "https://files.pythonhosted.org/packages/32/d1/a3652fe2c19134d0d15922177821d863cbd7e842d53a21bbe7e8e3a1b5ac/certifi-2026.10.23-py3-none-any.whl", using: :nounzip
-    sha256 "e9b54de76e530bb6cf0ccd036787103acb58fd42ba930ea8bf948ddbaa2f61d1"
+    url "https://files.pythonhosted.org/packages/6d/39/5eec3296860b94ac20bb8ed807725b88f6adfab3f343df592afd975f5f86/certifi-2026.11.20-py3-none-any.whl", using: :nounzip
+    sha256 "7422df25243767b9877031a2248cb14d09ddac9beee846f4cef3d5c9191d488f"
   end
 
   resource "click" do
@@ -270,8 +270,8 @@ class Songe < Formula
       end
 
       resource "pyyaml" do
-        url "https://files.pythonhosted.org/packages/89/a0/6cf41a19a1f2f3feab0e9c0b74134aa2ce6849093d5517a0c550fe37a648/pyyaml-6.0.3-cp312-cp312-macosx_11_0_arm64.whl", using: :nounzip
-        sha256 "fc09d0aa354569bc501d4e787133afc08552722d3ab34836a80547331bb5d4a0"
+        url "https://files.pythonhosted.org/packages/c7/30/efaabf2d135d11f32cbd4752f3b7df0d592894ee3ca252bbba013a7d5891/pyyaml-6.0.4-cp312-cp312-macosx_11_0_arm64.whl", using: :nounzip
+        sha256 "4d30c2f186612bd2f9f07c08a4c96721af59cfc8da3ec7cb27dfa2834e8bb019"
       end
 
       resource "regex" do
@@ -305,8 +305,8 @@ class Songe < Formula
       end
 
       resource "transformers" do
-        url "https://files.pythonhosted.org/packages/bf/62/8c06b0b932cc9a5dac7ce48bf23737107143e75f9b20fd99e97dde1463c3/transformers-5.23.0-py3-none-any.whl", using: :nounzip
-        sha256 "018e82fd07490ad5bb58414f65e31576033dc7f36bed10c574843f69b90991bf"
+        url "https://files.pythonhosted.org/packages/a4/6c/0a5b01b84e605e811f25d091262f199894c0839dcd7f2a289254cf7a16a7/transformers-5.24.0-py3-none-any.whl", using: :nounzip
+        sha256 "ff5ebedf9359f94bb63772b6380eba6e7104d010cbbb2cb82c788817ea7486f6"
       end
 
       resource "truststore" do
@@ -346,8 +346,8 @@ class Songe < Formula
       end
 
       resource "pyyaml" do
-        url "https://files.pythonhosted.org/packages/d1/33/422b98d2195232ca1826284a76852ad5a86fe23e31b009c9886b2d0fb8b2/pyyaml-6.0.3-cp312-cp312-macosx_10_13_x86_64.whl", using: :nounzip
-        sha256 "7f047e29dcae44602496db43be01ad42fc6f1cc0d8cd6c83d342306c32270196"
+        url "https://files.pythonhosted.org/packages/86/df/5aec8a8c65e4c11fab31b55d53029d8013e5ccfcf409c20f8175e3e267c7/pyyaml-6.0.4-cp312-cp312-macosx_10_15_x86_64.whl", using: :nounzip
+        sha256 "1088ad740f50c13178dad16fbc2fa1f634c791d42c7009fdb390e38e5b90b788"
       end
 
       resource "rpds-py" do
@@ -380,8 +380,8 @@ class Songe < Formula
       end
 
       resource "pyyaml" do
-        url "https://files.pythonhosted.org/packages/ed/23/7a778b6bd0b9a8039df8b1b1d80e2e2ad78aa04171592c8a5c43a56a6af4/pyyaml-6.0.3-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl", using: :nounzip
-        sha256 "9149cad251584d5fb4981be1ecde53a1ca46c891a79788c0df828d2f166bda28"
+        url "https://files.pythonhosted.org/packages/af/fb/d5ff6957db5c843151ff13196277bb8e20b2d5db2e2db3e8d051038d888b/pyyaml-6.0.4-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl", using: :nounzip
+        sha256 "45e37dd647db9d67b757444c74060c064ace5fdaa08f42bf4fda3812275d423e"
       end
 
       resource "rpds-py" do
@@ -411,8 +411,8 @@ class Songe < Formula
       end
 
       resource "pyyaml" do
-        url "https://files.pythonhosted.org/packages/8b/9d/b3589d3877982d4f2329302ef98a8026e7f4443c765c46cfecc8858c6b4b/pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", using: :nounzip
-        sha256 "ba1cc08a7ccde2d2ec775841541641e4548226580ab850948cbfda66a1befcdc"
+        url "https://files.pythonhosted.org/packages/94/80/1d27f7084b983b7cfd1fb35e65a38276d9eddfdcdabc0922bb26cf9521bc/pyyaml-6.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", using: :nounzip
+        sha256 "93bfb2459195406a518e2f487a9bbf01df240175f31e06f5a252ac6734c7bbf0"
       end
 
       resource "rpds-py" do
