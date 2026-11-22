@@ -4,9 +4,9 @@ class Songe < Formula
   desc "Local hindsight distillation for a model that sleeps"
   homepage "https://github.com/sous-labs/songe"
   # The release updater verifies the CLI wheel and pins all dependency wheels.
-  url "https://files.pythonhosted.org/packages/6a/0e/a14e88df336dcd0328dd76936f3ef05e995b63a6da1dfc95d201a8a96206/songe-0.1.0a14-py3-none-any.whl", using: :nounzip
-  version "0.1.0a14"
-  sha256 "35632eb2dc54acf1b472634c1cb1ad419515b6832c577db3726f7b5d70484c95"
+  url "https://files.pythonhosted.org/packages/23/5c/7903c41f6067152315e5f18b045c6afec5920cd6f587cdf05bfeb991d935/songe-0.1.0a15-py3-none-any.whl", using: :nounzip
+  version "0.1.0a15"
+  sha256 "8675e79ab875feee273f6d3abe94aed32687de3435483a7a57cb3fb3ac2bd1de"
 
   depends_on "python@3.12"
   depends_on macos: :sonoma
@@ -138,8 +138,8 @@ class Songe < Formula
   end
 
   resource "textual" do
-    url "https://files.pythonhosted.org/packages/13/f8/2a6a6ff1d07788f635493867d5a4003dfecacad16af1fdc9814d10daca3d/textual-6.12.0-py3-none-any.whl", using: :nounzip
-    sha256 "cf9ea9a54d213c7736efe9fef440c7f49218d4e6ab75279afd060eded9c567ec"
+    url "https://files.pythonhosted.org/packages/fb/be/35261223d9416a0751cdff1c7b4a6f881387218a12d439fe22fefebc8c04/textual-8.2.8-py3-none-any.whl", using: :nounzip
+    sha256 "267375fd402dc8d981457212efa71f0e3365fd17bba144ba9bb3ed7563cb374a"
   end
 
   resource "tqdm" do
@@ -185,8 +185,8 @@ class Songe < Formula
       end
 
       resource "filelock" do
-        url "https://files.pythonhosted.org/packages/8a/c9/eb6b6528c7edb958d4c24ac47a8b94113d9de36e4cfc6eecd599b1a4f349/filelock-4.2.12-py3-none-any.whl", using: :nounzip
-        sha256 "21decfec02f116ed4c954433cdb31f28c3b346b784543177b6d7059da2702ee9"
+        url "https://files.pythonhosted.org/packages/68/66/870b527908a06c7ec0e91239bd2c4d0bb22921efd4f915428b4e47d461a6/filelock-4.3.0-py3-none-any.whl", using: :nounzip
+        sha256 "f933f39f7e01249a4a49b9abab30edc6d4b874624c3de5dd0b0d137aa8adb979"
       end
 
       resource "fsspec" do
